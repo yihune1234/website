@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Cars Online</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Rent Cars Online</h1>
+    
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showSection('home')">Home</a></li>
+          <li><a href="#" onclick="showSection('about')">About</a></li>
+          <li><a href="#" onclick="showSection('services')">Services</a></li>
+          <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+          <li><a href="#" onclick="showSection('form')">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+ 
+    <section id="home" class="active">  
+      <div class="b1">  
+          <h2>Welcome to Rent Cars Online</h2>  
+      </div>  
+      <div class="b2">  
+          <p>At Rent Cars Online,<br> we revolutionize the way you rent vehicles by offering a <br> seamless and user-friendly online car rental experience. </p>  
+          <p>Whether you're planning a weekend getaway, <br> a business trip, or need a reliable vehicle for your daily commute, </p>  
+          <p>our platform provides you with an extensive selection of cars tailored to meet your needs.</p>  
+      </div>  
+  
+      <!-- Search Bar -->  
+      <div class="search-bar">  
+          <h3>Search for a Service</h3>  
+          <input type="text" id="search-input" placeholder="What are you looking for?">  
+          <button type="button" onclick="performSearch()">Search</button>  
+      </div>  
+      <!-- Additional Buttons -->  
+      <div class="buttons">  
+          <button type="button" onclick="showSection('about')">Learn About Us</button>  
+          <button type="button" onclick="showSection('services')">View Our Services</button>  
+          <button type="button" onclick="showSection('contact')">Contact Us</button>  
+      </div>  
+      <!-- Followers and Views -->  
+      <div class="statistics" style="color: blue;">  
+          <h3>Our Community</h3>  
+          <p><strong>Followers:</strong> 120,000+</p>  
+          <p><strong>Views:</strong> 1,500,000+ monthly</p>  
+      </div>  
+    </section>
+    
+<section id="about">
+  <div class="info-about">
+
+ 
+    <h2>About Rent Cars Online</h2>
+    <p>Welcome to Rent Cars Online, your trusted partner for hassle-free car rentals at your fingertips!  
+        Our online car rental system is designed to provide you with a seamless and convenient experience,  
+        allowing you to browse, select, and book your ideal vehicle from the comfort of your home or on the go.  
+    </p>
+    <p>Founded in 2024, Rent Cars Online was created with the vision of simplifying the car rental process for everyone.  
+        We understand that traveling can be stressful, which is why we have streamlined our platform to make it user-friendly and efficient.  
+    </p>
+    <p>Whether you're planning a weekend getaway, a business trip, or need a vehicle for a special occasion,  
+        we have a wide selection of cars to meet your needs.  
+    </p>
+  </div>
+    <div class="about-extra">
+        <h3>More Choice, Transparency, and Personalization</h3>
+        <details>
+          <p>We pride ourselves on offering:</p>
+          <ul>
+              <li><strong>More Choice:</strong> Access to a wide variety of vehicles to suit every occasion and budget.</li>
+              <li><strong>Transparency:</strong> Clear pricing with no hidden fees, ensuring a stress-free experience.</li>
+              <li><strong>Personalization:</strong> Tailored rental solutions to fit your unique requirements.</li>
+          </ul>
+  
+        </details>
+      
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Powerful and user-friendly admin panel to manage your portal.</li>
+            <li>Wide range of features for retail and corporate customers as well as travel agents.</li>
+            <li>We provide a Powerful, Flexible, & Easy-to-Use Online Booking Engine.</li>
+            <li>End-to-End Travel Portal Solution with 500,000 hotels worldwide.</li>
+            <li>Rental cars in 190+ countries.</li>
+            <li>Partnered with 900+ airlines worldwide.</li>
+            <li>Over 50,000 hotels with discounted package rates.</li>
+            <li>Sightseeing in over 50 countries around the world.</li>
+            <li>A dedicated team of professionals with many years of combined experience helping online travel agencies grow.</li>
+            <li>Increases revenue from sales of commissionable packages.</li>
+        </ul>
+    </div>
+
+    <div class="about-technology">
+        <h3>Embracing Modern Technology</h3>
+        <p>We leverage the latest advancements in technology to enhance your car rental experience, including:</p>
+        <ul>
+            <li>AI-driven recommendations for personalized car suggestions.</li>
+            <li>Real-time inventory updates for the most accurate availability.</li>
+            <li>Seamless mobile app integration for on-the-go bookings.</li>
+        </ul>
+        <p>Our commitment to innovation ensures that you enjoy the most efficient, reliable, and secure service in the industry.</p>
+    </div>
+</section>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>We value your feedback, questions, and suggestions. Get in touch with us through the form below, or reach us via email and phone for immediate assistance.</p>
+  <p>Email: support@rentcarsonline.com | Phone: +125192849859</p>
+  <p>Stay updated with our latest news and offers by subscribing to our newsletter!</p>
+
+  <!-- Updated Contact Form -->
+  <form id="contact-form" class="styled-form">
+      <fieldset>
+          <legend>Contact Us Today</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Contact Number" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+          <label for="service-interest">What are you interested in?</label>
+          <select id="service-interest" name="service-interest">
+              <option value="general-inquiry">General Inquiry</option>
+              <option value="rental-options">Rental Options</option>
+              <option value="corporate-rentals">Corporate Rentals</option>
+              <option value="technical-support">Technical Support</option>
+              <option value="others">Others</option>
+          </select>
+
+          <label for="preferred-contact">Preferred Contact Method:</label>
+          <select id="preferred-contact" name="preferred-contact">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="none">No Preference</option>
+          </select>
+
+          <label for="newsletter">Subscribe to Newsletter:</label>
+          <div class="checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <span>Yes, I want to receive updates and offers</span>
+          </div>
+
+          <button type="submit">Submit</button>
+      </fieldset>
+  </form>
+
+  <!-- Updated Location Section -->
+  <div class="contact-map">
+      <h3>Our Location</h3>
+      <p>123 Main Street, Suite 400, Anytown, Ethiopia</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094045!2d144.953735315504!3d-37.816279442021265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727f9c6478a2b2!2s123%20Main%20St%2C%20Anytown%20USA!5e0!3m2!1sen!2sus!4v1614766764987!5m2!1sen!2sus" 
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+
+
+<section id="services">  
+  <h2>Our Services</h2>  
+   
+      <p>Browse and select from a wide range of vehicles, including economy cars, SUVs, luxury vehicles, vans, and trucks.</p> 
+        <!-- Images Section -->  
+      <div class="service-images">  
+        <h3>Explore Our Fleet</h3>      </div> 
+        <div class="image-gallery">  
+          <div class="div-fig1">
+          <figure class="fig1">
+            <img src="../images/download (1).jfif" alt="Economy Car" title="Economy Car" width="300px" height="250px">  
+            <figcaption>
+              <details>
+          <label for="">name:Economy Car</label>
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="#"   id="formonth-economy">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit" onclick="showSection('form')">order</button>
+ 
+</form>
+<form action="" id="forweek-economy">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+          <figure class="fig1">
+            <img src="../images/download (2).jfif"alt="SUV" title="SUV" width="300px" height="250px">  
+            <figcaption>
+              <details>
+                <label for="">name:SUV</label>
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="" class="formonth">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit">order</button>
+ 
+</form>
+<form action="" class="forweek">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+          <figure class="fig1">
+            <img src="../images/download (3).jfif" alt="Luxury Car" title="Luxury Car" width="300px" height="250px">
+            <figcaption>
+              <details>
+                <label for="">name:Luxury Car</label>   
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="" class="formonth">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit">order</button>
+ 
+</form>
+<form action="" class="forweek">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+          <figure class="fig1">
+            <img src="../images/download (4).jfif" alt="Van" title="Van" width="300px" height="250px">
+            <figcaption>
+              <details>
+                <label for="">name:Van</label> 
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="" class="formonth">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit">order</button>
+ 
+</form>
+<form action="" class="forweek">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="div-fig2">
+          <figure class="fig2">
+            <img src="../images/download (5).jfif" alt="Truck" title="Truck" width="300px" height="250px"> 
+            <figcaption>
+              <details>
+                <label for="">name:Truck</label> 
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="" class="formonth">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit">order</button>
+ 
+</form>
+<form action="" class="forweek">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+          <figure class="fig2">
+            <img src="../images/download (6).jfif" alt="Hybrid Car" title="Hybrid Car" width="300px" height="250px"> 
+            <figcaption>
+              <details>
+                <label for="">name:Hybrid Car</label>    
+<p>if you want to order a rent ,you can cick the button to rent this car!</p>
+<form action="" class="formonth">
+  <label for="month">for 1 month</label>
+  <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+<button type="submit">order</button>
+ 
+</form>
+<form action="" class="forweek">
+  <label for="week">for 1 week</label>
+  <input type="text" name="week" placeholder="2,000 birr" id="" required>
+  <button type="submit">order</button>
+</form><p id="message"></p>
+              </details>
+            </figcaption>
+          </figure>
+
+             
+            <figure class="fig2">
+              <img src="../images/download (7).jfif" alt="" width="300px" height="250px">
+              <figcaption>
+                <details>
+                  <label for="">name:Hybrid Car</label>
+  <p>if you want to order a rent ,you can cick the button to rent this car!</p>
+  <form action="" class="formonth">
+    <label for="month">for 1 month</label>
+    <input type="text" name="month" placeholder="20,000 birr" id="month" required>
+  <button type="submit">order</button>
+   
+  </form>
+  <form action="" class="forweek">
+    <label for="week">for 1 week</label>
+    <input type="text" name="week" placeholder="2,000 birr" id="" required>
+    <button type="submit">order</button>
+  </form><p id="message"></p>
+                </details>
+              </figcaption>
+            </figure> 
+          </div>
+     
+    </div>  
+
+  <div class="order-links">
+    <a href="#" class="order-link">Order Rent Car - Economy</a>
+   
+  </div>
+
+  <!-- Additional Functionality -->  
+ 
+<hr>
+<div class="additional-services">  
+  <h2>Additional Features</h2>  
+  <ul>  
+      <li>24/7 Customer Support: Get assistance anytime with our dedicated support team.</li>  
+      <li>Insurance Options: Choose from a variety of insurance plans for your peace of mind.</li>  
+      <li>GPS Navigation: Add GPS navigation to your rental for a hassle-free journey.</li>  
+      <li>Child Seats: Request child seats for family travel.</li>  
+      <li>Corporate Rentals: Special packages and discounts for business clients.</li>  
+      <li>Eco-Friendly Options: Choose from hybrid or electric vehicles for an environmentally friendly drive.</li>  
+      <li>Roadside Assistance: Enjoy the peace of mind with complimentary roadside support.</li>  
+  </ul>  
+</div> 
+   
+  <div class="testimonials">  
+      <h3>What Our Customers Say</h3>  
+      <blockquote>  
+          "Rent Cars Online made my trip so much easier! Their platform is intuitive, and the car was in excellent condition."- Yihune B.  
+      </blockquote>  
+      <blockquote>  
+          "Affordable prices and fantastic customer service. Highly recommend!" - Yihune B.  
+      </blockquote>  
+      <blockquote>  
+          "I appreciate the eco-friendly car options. It aligns with my values and makes traveling guilt-free." - Nedhi J.  
+      </blockquote>  
+  </div> 
+  
+  
+   </section>
+    <!-- Contact Section -->
+
+<section id="contact">  
+  <h2>Contact Us</h2>  
+  <p>We value your feedback, questions, and suggestions. Get in touch with us through the form below, or reach us via email and phone for immediate assistance.</p>  
+  <p>Email: support@rentcarsonline.com | Phone: +1-800-555-RENT</p>  
+  <p>Stay updated with our latest news and offers by subscribing to our newsletter!</p>  
+  <form id="contact-form">  
+      <label for="name">Name:</label>  
+      <input type="text" id="name" name="name" placeholder="Your Name" required>  
+       
+      <label for="email">Email:</label>  
+      <input type="email" id="email" name="email" placeholder="Your Email" required>  
+       
+      <label for="phone">Phone Number:</label>  
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>  
+       
+      <label for="message">Message:</label>  
+      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>  
+       
+      <label for="preferred-contact">Preferred Contact Method:</label>  
+      <select id="preferred-contact" name="preferred-contact">  
+          <option value="email">Email</option>  
+          <option value="phone">Phone</option>  
+          <option value="none">No Preference</option>  
+      </select>  
+       
+      <label for="newsletter">Subscribe to Newsletter:</label>  
+      <input type="checkbox" id="newsletter" name="newsletter"> Yes, I want to receive updates and offers  
+       
+      <button type="submit">Send</button>  
+  </form>  
+  <div class="contact-map">  
+      <h3>Our Location</h3>  
+      <p>123 Main Street, Suite 400, Anytown, USA</p>  
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094045!2d144.953735315504!3d-37.816279442021265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727f9c6478a2b2!2s123%20Main%20St%2C%20Anytown%20USA!5e0!3m2!1sen!2sus!4v1614766764987!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+  </div>  
+</section>
+
+    <section id="form">
+  
+      <div class="container">
+          <h1>Car Rental Registration</h1>
+          <form id="registrationForm">
+              <h2>User Information</h2>
+              <label for="fullName">Full Name:</label>
+              <input type="text" id="fullName" required>
+  
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" required>
+  
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" required>
+  
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" required>
+  
+              <h2>Driver's License Information</h2>
+              <label for="licenseNumber">Driver's License Number:</label>
+              <input type="text" id="licenseNumber" required>
+  
+              <label for="expiryDate">License Expiry Date:</label>
+              <input type="date" id="expiryDate" required>
+  
+              <label for="country">Country of Issue:</label>
+              <input type="text" id="country" required>
+  
+              <h2>Address Information</h2>
+              <label for="address">Residential Address:</label>
+              <input type="text" id="address" required>
+  
+              <label for="city">City:</label>
+              <input type="text" id="city" required>
+  
+              <label for="state">State/Province:</label>
+              <input type="text" id="state" required>
+  
+              <label for="zip">Zip/Postal Code:</label>
+              <input type="text" id="zip" required>
+  
+              <h2>Account Security</h2>
+              <label for="password">Password:</label>
+              <input type="password" id="password" required>
+  
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" required>
+  
+              <h2>Payment Information (Optional)</h2>
+              <label for="cardNumber">Credit/Debit Card Number:</label>
+              <input type="text" id="cardNumber">
+  
+              <label for="billingAddress">Billing Address:</label>
+              <input type="text" id="billingAddress">
+  
+              <h2>Terms and Conditions</h2>
+              <label>
+                  <input type="checkbox" id="terms" required> I accept the terms and conditions
+              </label>
+  
+              <h2>Additional Features</h2>
+              <label>
+                  <input type="checkbox" id="newsletter"> Subscribe to newsletter
+              </label>
+  
+              <button type="submit" id="reg">Register</button>
+          </form>
+          <div id="message"></div>
+      </div>
+  
+
+  
+  
+ </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Rent Cars Online. All rights reserved.</p>
+    <button id="back-to-top">Back to Top</button>
+  </footer>
+
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
